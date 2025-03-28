@@ -1,0 +1,477 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.header, .navbar {
+    padding: 10px 80px;  /* Adjust the '40px' value for more or less space */
+}
+/* LOGO */
+.logo img {
+    height: 40px;
+}
+
+/* SEARCH BAR */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 500px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.search-bar select {
+    padding: 10px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* USER MENU */
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #333;
+}
+
+.icon img {
+    width: 20px;
+    height: 20px;
+}
+
+/* LOWER NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.header, .navbar {
+    padding: 10px 80px;  /* Adjust the '40px' value for more or less space */
+}
+
+/* LEFT MENU */
+.left-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* RIGHT MENU */
+.right-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* NAVBAR LINKS */
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+/* FLAG ICON */
+.navbar a img {
+    width: 20px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+/* Features Section Styles */
+.features {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.feature {
+    display: inline-block;
+    width: 22%;
+    margin: 0 1%;
+    text-align: center;
+}
+
+.feature i {
+    font-size: 40px;
+    color: #007bff;
+}
+
+/* Footer Styles */
+
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 500px;
+}
+
+.search-bar select {
+    padding: 10px;
+    border: 1px solid #007bff;
+    background: #f0f0f0;
+
+}
+
+.search-bar button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 12px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.user-menu {
+    display: flex;
+    align-items:last baseline ;
+    gap: 30px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #666;
+}
+
+.icon img {
+    width: 20px;
+    margin-bottom: 4px;
+}
+
+/* Extra Services Section */
+.extra-services {
+    text-align: center;
+    padding: 20px;
+    background: #f5f7f9;
+}
+
+.extra-services h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.service-card p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.service-card .icon {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    background: #e0ecff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+/* Suppliers Section */
+.suppliers {
+    text-align: center;
+    padding: 20px;
+}
+
+.suppliers h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.region-container {
+    display:flex ;
+    flex-wrap: wrap ; /* Allows items to wrap into a second row */
+    justify-content: center;
+    gap: 10px;
+    max-width: 900px; /* Adjust as needed for two rows */
+    margin: auto ;
+    
+}
+
+.region {
+    display: block;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    padding: 10px;
+   
+    flex: 1 5 calc(25% - 100px); /* Makes 4 items per row */
+    min-width: 150px; /* Prevents items from shrinking too much */
+    text-align: left;
+    
+}
+
+.region img {
+    width: 35px;
+    height: auto;
+    align-items: center;
+}
+
+.region span {
+    display: block;
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/* Newletter Subscription */
+
+.newsletter {
+    background: #cccecf8f; /* Light background */
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    
+    margin: 20px auto;
+}
+
+.newsletter h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.newsletter p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    margin: auto;
+}
+
+.input-container .icon {
+    padding: 8px;
+    background: #eee;
+    border-radius: 5px 0 0 5px;
+}
+
+.input-container input {
+    border: none;
+    padding: 10px;
+    width: 300px;
+    outline: none;
+}
+
+.input-container button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-container button:hover {
+    background: #0056b3;
+}
+
+
+/* Footer Styling */
+.footer {
+    background-color: #f8f9fa;
+    padding: 30px 50px;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Brand Section */
+.footer-brand {
+    flex: 1;
+    max-width: 250px;
+}
+
+.footer-brand .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.footer-brand .logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #666;
+}
+
+.social-icons img {
+    width: 24px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-links div h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 6px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.footer-links ul li a:hover {
+    color: #007bff;
+}
+
+/* App Download Section */
+.footer-app {
+    text-align: center;
+}
+
+.footer-app h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-app img {
+    width: 120px;
+    display: block;
+    margin: 5px 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+}
+
+.language-selector img {
+    width: 20px;
+    margin-right: 5px;
+}
